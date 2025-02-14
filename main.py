@@ -15,7 +15,7 @@ class Student:
 
     @classmethod
     def mark_attendance(cls):
-        cls.__attendance += 1  # Modify class attribute
+        cls.__attendance += 1  
 
 class Course:
     def __init__(self, course_name):
@@ -24,7 +24,7 @@ class Course:
         self.student_count = 0
 
     def add_student(self, student):
-        if isinstance(student, Student):  # Ensure student is valid
+        if isinstance(student, Student):  
             self.students.append(student)
             self.student_count += 1
 
